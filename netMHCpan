@@ -1,4 +1,4 @@
-#! /bin/tcsh -f
+#!/bin/tcsh -f
 
 # This the main NetMHCpan 4.1 script. It only acts as the frontend to the
 # software proper, a compiled binary.
@@ -11,12 +11,12 @@
 ###############################################################################
 
 # full path to the NetMHCpan 4.0 directory (mandatory)
-setenv	NMHOME	/home/lab/Desktop/netMHCpan-4.1
+setenv	NMHOME	/home/netMHCpanAWS
 
 # determine where to store temporary files (must be writable to all users)
 
 if ( ${?TMPDIR} == 0 ) then
-	setenv  TMPDIR  /home/lab/Desktop/netMHCpan-4.1/tmp
+	setenv  TMPDIR  /home/netMHCpanAWS/tmp
 endif
 
 # determine platform (do not change this unless you don't have 'uname'!)
